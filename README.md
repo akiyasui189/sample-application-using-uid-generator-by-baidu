@@ -17,7 +17,7 @@ this is one way, for generate unique id in your system.
 
 I think this is easy way if your application based on Spring Boot with Kotlin.
 
-First this sample is using `[uid-generator](https://github.com/baidu/uid-generator)` by Baidu.
+First this sample is using \`[uid-generator](https://github.com/baidu/uid-generator)\` by Baidu.
 
 Because this library is so easy for us when using RDB.
 
@@ -27,7 +27,7 @@ In addition, this library is `snowflake` like.
 
 It's strong and easy to customize.
 
-In this time, set each value of three fields with reference to `[sonyflake](https://github.com/sony/sonyflake)`.
+In this time, set each value of three fields with reference to \`[sonyflake](https://github.com/sony/sonyflake)\`.
 
 ```
 delta seconds (time in units): 39bits
