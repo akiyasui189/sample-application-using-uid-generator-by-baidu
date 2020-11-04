@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  uid-generator-mysql:
+    container_name: uid-generator-mysql
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sample
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      TZ: 'Asia/Tokyo'
+    ports:
+    - 3306:3306
+    volumes:
+    - ./docker/mysql/data:/var/lib/mysql
+    - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
+### EOF
